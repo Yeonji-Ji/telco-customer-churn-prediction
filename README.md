@@ -18,6 +18,8 @@ Customer churn is a critical challenge for telecom providers. Identifying at-ris
 - **Contract Type**: Month-to-month contracts are highly correlated with churn.  
 
 ![Churn Distribution](images/churn_distribution.png)  
+
+
 ![More EDA](images/more_eda.png)  
 
 ---
