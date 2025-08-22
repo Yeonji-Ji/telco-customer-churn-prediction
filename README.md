@@ -16,10 +16,10 @@ Customer churn is a critical challenge for telecom providers. Identifying at-ris
 - **Tenure**: Customers with shorter tenure are more likely to churn.  
 - **Charges**: Higher monthly charges increase churn probability.  
 - **Contract Type**: Month-to-month contracts are highly correlated with churn.  
-
+- Churn Distribution
 ![Churn Distribution](images/churn_distribution.png)  
 
-
+- More EDA
 ![More EDA](images/more_eda.png)  
 
 ---
