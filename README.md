@@ -41,7 +41,7 @@ Develop machine learning models to predict whether a telecom customer will churn
   - Strong overall, but poor recall on minority churn class.  
 
 - **Logistic Regression (balanced weights):**
-  - Improved churn recall to 78%, but reduced precision.  
+  - Improved churn recall to 79%, but reduced precision.  
 
 - **Logistic Regression + SMOTE**
   - Recall improved compared to baseline LogReg(70%), but precision still low.  
