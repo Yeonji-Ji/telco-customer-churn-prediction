@@ -22,6 +22,17 @@ Develop machine learning models to predict whether a telecom customer will churn
   - Charges: Higher monthly charges increase churn probability.
   ![Churn Distribution](reports/figures/churn_vs_n.png)
 
+- **Results Comparison**
+
+| Model | Accuracy | Precision (Churn) | Recall (Churn) | F1 (Churn) |
+| --- | --- | --- | --- | --- |
+| Logistic Regression | 0.781 | 0.605 | 0.510 | 0.552 |
+| LogReg (balanced) | 0.735 | 0.506 | 0.783 | 0.615 |
+| LogReg + SMOTE | 0.723 | 0.484 | 0.700 | 0.572 |
+| Random Forest | 0.785 | 0.590 | 0.623 | 0.610 |
+| XGBoost | 0.756 | 0.529 | 0.725 | 0.612 |
+| LightGBM | 0.759 | 0.534 | 0.700 | 0.605 |
+
 - **Logistic Regression (baseline):**
   - Strong overall, but poor recall on minority churn class.  
 
@@ -40,23 +51,6 @@ Develop machine learning models to predict whether a telecom customer will churn
 - **LightGBM**
   - Recall (70%) is similar to LogReg + SMOTE model.
 
-- **Results Comparison**
-
-| Model | Accuracy | Precision (Churn) | Recall (Churn) | F1 (Churn) |
-| --- | --- | --- | --- | --- |
-| Logistic Regression | 0.781 | 0.605 | 0.510 | 0.552 |
-| LogReg (balanced) | 0.735 | 0.506 | 0.783 | 0.615 |
-| LogReg + SMOTE | 0.723 | 0.484 | 0.700 | 0.572 |
-| Random Forest | 0.785 | 0.590 | 0.623 | 0.610 |
-| XGBoost | 0.756 | 0.529 | 0.725 | 0.612 |
-| LightGBM | 0.759 | 0.534 | 0.700 | 0.605 |
-
-
-
-
-**Business Context**  
-Customer churn is a critical challenge for telecom providers. Identifying at-risk customers allows companies to take proactive actions (e.g., promotions, contract adjustments), reducing revenue loss and improving retention.
-
 
 ---
 
@@ -65,6 +59,15 @@ Customer churn is a critical challenge for telecom providers. Identifying at-ris
 ### Confusion Matrices
 - Logistic Regression  
   ![Logistic Regression Confusion Matrix](reports/figures/Baseline_Model_CM.png)  
+
+- Random Forest  
+  <img src="reports/figures/RandomForest.png" width="400">  
+
+- XGBoost  
+  <img src="reports/figures/XGBoost.png" width="400">  
+
+- LightGBM  
+  <img src="reports/figures/LightGBM.png" width="400">  
 
 - Random Forest  
   ![Random Forest Confusion Matrix](reports/figures/RandomForest.png/)  
