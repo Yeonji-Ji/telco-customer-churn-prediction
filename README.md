@@ -23,15 +23,19 @@ Develop machine learning models to predict whether a telecom customer will churn
   ![Churn Distribution](reports/figures/churn_vs_n.png)
 
 - **Results Comparison**
+<div align="center">
 
-| Model | Accuracy | Precision (Churn) | Recall (Churn) | F1 (Churn) |
-| --- | --- | --- | --- | --- |
-| Logistic Regression | 0.781 | 0.605 | 0.510 | 0.552 |
-| LogReg (balanced) | 0.735 | 0.506 | 0.783 | 0.615 |
-| LogReg + SMOTE | 0.723 | 0.484 | 0.700 | 0.572 |
-| Random Forest | 0.785 | 0.590 | 0.623 | 0.610 |
-| XGBoost | 0.756 | 0.529 | 0.725 | 0.612 |
-| LightGBM | 0.759 | 0.534 | 0.700 | 0.605 |
+| Model               | Accuracy | Precision (Churn) | Recall (Churn) | F1 (Churn) |
+|---------------------|:--------:|:-----------------:|:--------------:|:----------:|
+| Logistic Regression | 0.782    | 0.606             | 0.511          | 0.554      |
+| LogReg (balanced)   | 0.735    | 0.500             | 0.794          | 0.614      |
+| LogReg + SMOTE      | 0.723    | 0.484             | 0.698          | 0.572      |
+| Random Forest       | 0.785    | 0.590             | 0.623          | 0.610      |
+| XGBoost             | 0.756    | 0.529             | 0.725          | 0.612      |
+| LightGBM            | 0.759    | 0.534             | 0.698          | 0.605      |
+
+</div>
+
 
 - **Logistic Regression (baseline):**
   - Strong overall, but poor recall on minority churn class.  
@@ -68,15 +72,6 @@ Develop machine learning models to predict whether a telecom customer will churn
 
 - LightGBM  
   <img src="reports/figures/LightGBM.png" width="400">  
-
-- Random Forest  
-  ![Random Forest Confusion Matrix](reports/figures/RandomForest.png/)  
-
-- XGBoost  
-  ![XGBoost Confusion Matrix](reports/figures/XGBoost.png)  
-
-- LightGBM  
-  ![LightGBM Confusion Matrix](reports/figures/LightGBM.png)  
 
 ---
 
